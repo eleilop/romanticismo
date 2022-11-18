@@ -1,0 +1,110 @@
+/***************************************************************/
+/* Web del romanticismo                                        */
+/* Hoja de estilo para index.html                              */
+/* Autor: Eloy Leiva López                                     */
+/* Version: 1.0                                                */
+/* 11 de noviembre de 2022                                     */
+/***************************************************************/
+
+/* ESTILO GENERAL                                              */
+
+@font-face {
+    src: url('../fonts/Blacksword/Blacksword.otf');
+    font-family: titulos;
+    }
+
+@font-face {
+    src: url('../fonts/Lora/Lora-VariableFont_wght.ttf');
+    font-family: textos;
+    }
+
+* {box-sizing: border-box;}
+
+body {margin: 0; padding: 0; /* Resetear el por defecto de la ventana */
+    
+      font-family: textos;
+      background-color: brown;
+}
+
+#wrapper {width: 80%;
+          background-color: white;
+          margin: auto;
+}
+
+/******************** HERO SECTION OPCIÓN 1: FOTO + TEXTO ********************/
+
+#hero {background-image: url(../images/navegante.jpg);
+       height: 100vh; /* Para obligar a que se vea más allá del contenido*/
+       background-repeat: no-repeat; /* No lo repitas */
+       background-size: cover; /* Cubre todo el fondo */
+       background-position: 33%; /* Fija lo que hay en el medio */
+       padding-left: 5%;
+       padding-top: 5%;
+}
+
+#titulo {background-color: rgba(255,255,255,0.5);
+         font-family: titulos;
+         font-size: 3rem; 
+         width: 40%;
+         padding: 2%;
+         text-align: center;
+         border-radius: 20%;
+}
+
+/**************** HERO 2: HAIKEI.APP + POSITION + FROSTED GLASS************/
+
+#hero2 {background-image: url(../images/layered-steps-haikei.svg);
+        height: 100vh; /* Para obligar a que se vea más allá del contenido*/
+        background-repeat: no-repeat; /* No lo repitas */
+        background-size: cover; /* Cubre todo el fondo */
+        position: relative; /* el hero se mueve de sitio */
+}
+
+#titulo2 {font-family: titulos;
+          font-size: 3rem;
+          background-color: rgba(255,255,255,0.25);
+          width: 50%;
+          text-align: center; /* Podría haber puesto un padding */
+          
+          /* Estas cuatro reglas colocan una caja en medio de otra */
+          position: absolute; /* se fija DENTRO de hero */
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+
+          /* Para el efecto frosted glass (fondo debe ser blanco
+             y con opacidad por debajo de 0.5 */
+
+          backdrop-filter: blur(3px);
+}
+
+/*************** HERO 3: COLOR LISO + GETWAVES**************************/
+
+#hero3 {background-color: #0099ff; /* El mismo color que la ola */
+        height: 40vh;
+        position: relative
+}
+
+#titulo3 {font-family: titulos;
+          font-size: 4rem;
+          color: white;
+          
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+}
+
+/**************************** MEDIA QUERIES ****************************/
+
+@media only screen and (width<=900px){
+    #wrapper {width: 90%;}
+    #titulo {font-size: 2rem;
+             width: 40%;}
+}
+
+@media only screen and (width<=600px){
+    #wrapper {width: 100%;}
+    #titulo {font-size: 2rem;
+             width: 45%;}
+}

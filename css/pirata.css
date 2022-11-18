@@ -1,0 +1,34 @@
+/***************************************************************/
+/* Web del romanticismo                                        */
+/* Hoja de estilos de la Canción del Pirata                    */
+/* Autor: Eloy Leiva López                                     */
+/* Version: 1.0                                                */
+/* 21 de octubre de 2022                                       */
+/***************************************************************/
+
+/* ESTILO GENERAL                                              */
+
+@font-face {
+    font-family: titulo;
+    src: url("../fonts/Marck-Script/MarckScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: escritura;
+    src: url("../fonts/Lora/Lora-VariableFont_wght.ttf");
+}
+
+h1 {font-family: titulo;}
+body {font-family: escritura;
+      font-size: 1.2em;
+      color: #253A56;
+      background-image: url("../images/pirata2.jpg");
+      background-repeat: repeat-y;
+      background-size: 15%;
+      background-position: left;
+      background-color: #d3b393;
+}
+
+#poema {width: 30%;
+        margin-left: 20%;
+}

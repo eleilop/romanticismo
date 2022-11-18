@@ -1,0 +1,66 @@
+/***************************************************************/
+/* Web del romanticismo                                        */
+/* Hoja de estilo para autores                                 */
+/* Autor: Eloy Leiva López                                     */
+/* Version: 1.0                                                */
+/* 21 de octubre de 2022                                       */
+/***************************************************************/
+
+/* ESTILO GENERAL                                              */
+
+@font-face {
+            src: url('../fonts/Blacksword/Blacksword.otf');
+            font-family: titulos;
+            }
+
+@font-face {
+            src: url('../fonts/Lora/Lora-VariableFont_wght.ttf');
+            font-family: textos;
+            }
+
+* {box-sizing: border-box;} /* En width debe contar desde el borde hacia a dentro */
+body {
+        font-family: textos;
+        text-indent: 3em;
+        padding: 4%;
+        /* padding: 4%; no necesito padding con un layout single column */
+        background-color: rgb(185, 252, 230);
+     }
+
+#wrapper {
+          background-color: white;
+          width: 80%;
+          margin: 0 auto;
+          padding: 4%;
+        }
+
+h1,h2,h3 {
+           font-family: titulos;
+           border-bottom: 2px solid black;
+           width: 75%;
+           text-align: center;
+           margin: auto;
+           margin-bottom: 50px;
+           text-indent: 0;
+     }
+
+     p {
+        text-align: justify;
+     }
+
+     a {text-decoration: none;
+        color: red;
+     }
+
+     /* pseudoclase como selector :hover (ratón encima) */
+
+     a:hover {color: darkgoldenrod;
+     }
+
+#Espronceda {
+   width: 25%;
+   float: right;        /* Para que la imagen tenga el texto alrededor */
+   margin-left: 2%;
+}
+
+#Limpiar {clear:both;} /* Para desactivar el float left/right */
